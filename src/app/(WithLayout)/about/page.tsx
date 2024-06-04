@@ -12,10 +12,10 @@ const theme = createTheme({
   },
   palette: {
     primary: {
-      main: "#ff5722",
+      main: "#686D76",
     },
     secondary: {
-      main: "#00bcd4",
+      main: "#373A40",
     },
     text: {
       primary: "#ffffff",
@@ -35,7 +35,7 @@ const AboutPage = () => {
     <ThemeProvider theme={theme}>
       <Box
         sx={{
-          backgroundColor: "#212121",
+          backgroundColor: "white",
           color: theme.palette.text.primary,
           minHeight: "100vh",
           display: "flex",
@@ -57,7 +57,7 @@ const AboutPage = () => {
             fontWeight="bold"
             gutterBottom
             sx={{
-              fontFamily: "Lobster Two, cursive",
+              fontFamily: "sans-serif",
               color: theme.palette.primary.main,
             }}
           >
@@ -78,8 +78,9 @@ const AboutPage = () => {
             margin="0 auto"
             gutterBottom
             sx={{
-              fontFamily: "Roboto, sans-serif",
-              color: theme.palette.text.primary,
+              fontFamily: "sans-serif",
+              color: "black",
+              fontWeight: "medium"
             }}
           >
             Our mission is to connect travelers looking for companionship on
@@ -99,10 +100,10 @@ const AboutPage = () => {
             component="h2"
             textAlign="center"
             fontWeight="bold"
-            mt={5}
+            my={5}
             gutterBottom
             sx={{
-              fontFamily: "Lobster Two, cursive",
+              fontFamily: "sans-serif",
               color: theme.palette.secondary.main,
             }}
           >
@@ -126,6 +127,7 @@ const AboutPage = () => {
                     borderRadius: "10px",
                     boxShadow: "0 4px 20px rgba(0, 0, 0, 0.1)",
                     color: theme.palette.text.secondary,
+                    cursor: "pointer",
                     "&:hover": {
                       transform: "scale(1.05)",
                       transition: "transform 0.3s ease-in-out",
@@ -174,7 +176,7 @@ const AboutPage = () => {
             mt={5}
             gutterBottom
             sx={{
-              fontFamily: "Lobster Two, cursive",
+              fontFamily: "sans-serif",
               color: theme.palette.primary.main,
             }}
           >
@@ -184,7 +186,7 @@ const AboutPage = () => {
             <Typography
               variant="body1"
               sx={{
-                color: theme.palette.text.primary,
+                color: theme.palette.secondary.main,
                 fontFamily: "Roboto, sans-serif",
               }}
             >
@@ -193,13 +195,16 @@ const AboutPage = () => {
             <Typography
               variant="body1"
               sx={{
-                color: theme.palette.text.primary,
+                color: theme.palette.secondary.main,
                 fontFamily: "Roboto, sans-serif",
               }}
             >
               Phone: +123 456 7890
             </Typography>
-            <Typography variant="body1">
+            <Typography variant="body1" sx={{
+              color: theme.palette.secondary.main,
+              fontFamily: "Roboto, sans-serif",
+            }}>
               Follow us on{" "}
               <Link
                 href="https://socialmedia.com"
