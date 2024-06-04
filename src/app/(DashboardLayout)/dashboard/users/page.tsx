@@ -16,6 +16,7 @@ import {
 } from "@/redux/features/auth/authApi";
 import React from "react";
 import { toast } from "sonner";
+import Loading from "@/components/loading/loading";
 
 const UserManagement = () => {
   const { data, isLoading } = useGetAllUserQuery(undefined);
@@ -95,7 +96,7 @@ const UserManagement = () => {
   return (
     <Box my={2} width="100%">
       {isLoading ? (
-        <Typography>Loading...</Typography>
+        <Loading />
       ) : (
         <Box my={2} width="100%">
           <DataGrid

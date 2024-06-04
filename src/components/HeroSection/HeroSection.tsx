@@ -35,9 +35,9 @@ const HeroSection = () => {
           sx={{
             padding:"10px 30px",
             bgcolor: "green",
-            color: "#fff",
+            color: "white",
             "&:hover": {
-              bgcolor: "purple",
+              bgcolor: "#FF4081",
             },
           }}
           size="large"

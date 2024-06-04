@@ -19,6 +19,7 @@ import {
   useDeleteTripMutation,
   useGetAllTripsQuery,
 } from "@/redux/features/trip/tripApi";
+import Loading from "@/components/loading/loading";
 
 const TripManagement = () => {
   const { data: trips, isLoading } = useGetAllTripsQuery(undefined);
@@ -72,7 +73,7 @@ const TripManagement = () => {
           <DataGrid rows={trips?.data} columns={columns} hideFooter={true} />
         </Box>
       ) : (
-        <h1>Loading.....</h1>
+        <Loading />
       )}
     </Box>
   );

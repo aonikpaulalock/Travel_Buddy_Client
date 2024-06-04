@@ -188,15 +188,17 @@ const TravelTips = () => {
           type="submit"
           variant="contained"
           sx={{
-            height: "60px",
-            borderRadius: "30px",
+            height: { xs: "40px", sm: "50px" },
+            width: { xs: "90%", sm: "auto" },
+            borderRadius: "10px",
             backgroundColor: "#FF4081",
             color: "#fff",
-            padding: "0 30px",
-            fontSize: "1.2rem",
+            padding: { xs: "0 15px", sm: "0 20px" },
+            fontSize: { xs: "1rem", sm: "1rem" },
             "&:hover": {
               backgroundColor: "#F50057",
             },
+            marginTop: { xs: "10px", sm: "0" },
           }}
         >
           Search
