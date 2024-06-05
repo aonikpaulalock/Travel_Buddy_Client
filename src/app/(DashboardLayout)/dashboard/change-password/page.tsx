@@ -1,8 +1,6 @@
 "use client";
 import React from "react";
 import { useChangePasswordMutation } from "@/redux/features/auth/authApi";
-import { useRegisterMutation } from "@/redux/features/register/registerApi";
-import { useAppDispatch } from "@/redux/hooks";
 import {
   Box,
   Button,
@@ -11,8 +9,6 @@ import {
   Typography,
   TextField,
 } from "@mui/material";
-import { useRouter } from "next/navigation";
-import { useState } from "react";
 import { FieldValues, useForm } from "react-hook-form";
 import { toast } from "sonner";
 const ChangePassword = () => {
