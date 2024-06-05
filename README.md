@@ -1,28 +1,25 @@
 # Travel Buddy Project
 
-- Describe:
+### Description:
 
-  This is a travel body matching Full-Stack project.Here you can registration and login also.then you will create a trip and request to the another people for joining your trip. you can update your profile.You can searching or filtering easily in this project
+Travel Buddy is a web platform designed to connect travelers seeking companionship on their trips. It enables users to post their travel plans, search for trips, and find like-minded individuals to join them. The platform fosters a community of travelers sharing experiences and making travel safer and more enjoyable.
 
-* live URL: 
+* Client Side URL: https://travel-client-opal.vercel.app/
 
-* Server URL: 
+* Server Side URL: https://travel-buddy-server-two.vercel.app/
 
-* Technology:
 
-            * Next.js
-            * Redux toolkit
-            * Typescript
-            * MUI
-            * jsonwebtoken
-            * Framer
 
-* Instruction to run this project locally:
+# How to Use Locally
+* Clone ``https://github.com/aonikpaulalock/Travel_Buddy_Client.git`` the repository to your local machine.
+* Ensure you have Node.js and npm installed.
+* Install dependencies using npm install.
+* Run the server using npm run dev.
+* Access the website at http://localhost:3000 in your browser.
 
-  - 1: clone this repository.
-
-  - 2: write this command on your terminal:
-
-  * 3 npm install
-
-  - 4: npm run dev
+# Features
+* Users can register, log in, and manage their profiles.
+* They can post their travel plans with detailed descriptions and photos.
+* Search and filter options help users find relevant trips based on destination, dates, and type.
+* Users can request to join trips and manage their requests through their profiles.
+* Admins have access to a dashboard for managing users and trip listings.
